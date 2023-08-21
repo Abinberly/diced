@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="diced" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diced" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpz-Zu-nWD">
+                                <rect key="frame" x="135" y="101" width="114" height="49"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="41"/>
+                                <color key="textColor" red="0.52641500890000004" green="0.1194376395" blue="0.093641953619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="MYz-RS-vbJ">
+                                <rect key="frame" x="20" y="205" width="150" height="150"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Xym-jx-E0a">
+                                <rect key="frame" x="244" y="395" width="150" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3H-A9-2p5">
+                                <rect key="frame" x="80" y="625" width="100" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4N7-8P-seT">
+                                <rect key="frame" x="151" y="715" width="100.5" height="46.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ROLL">
+                                            <attributes>
+                                                <font key="NSFont" size="28" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.52641500890000004" green="0.1194376395" blue="0.093641953619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWY-Tv-YeU">
+                                <rect key="frame" x="197" y="625" width="17" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JWY-Tv-YeU" secondAttribute="trailing" constant="200" id="2ge-IT-A6i"/>
+                            <constraint firstItem="JWY-Tv-YeU" firstAttribute="top" secondItem="MYz-RS-vbJ" secondAttribute="bottom" constant="270" id="C01-YF-EuH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xym-jx-E0a" secondAttribute="trailing" constant="20" id="EyW-og-Wo3"/>
+                            <constraint firstItem="Xym-jx-E0a" firstAttribute="top" secondItem="MYz-RS-vbJ" secondAttribute="bottom" constant="40" id="VdG-m4-lje"/>
+                            <constraint firstItem="Jpz-Zu-nWD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="aTv-99-Tp1"/>
+                            <constraint firstItem="4N7-8P-seT" firstAttribute="top" secondItem="L3H-A9-2p5" secondAttribute="bottom" constant="57" id="bNL-pE-oR8"/>
+                            <constraint firstItem="Jpz-Zu-nWD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="eIS-16-acy"/>
+                            <constraint firstItem="MYz-RS-vbJ" firstAttribute="top" secondItem="Jpz-Zu-nWD" secondAttribute="bottom" constant="55" id="fs5-2X-Vsv"/>
+                            <constraint firstItem="L3H-A9-2p5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="gQ5-9C-vz2"/>
+                            <constraint firstItem="L3H-A9-2p5" firstAttribute="top" secondItem="MYz-RS-vbJ" secondAttribute="bottom" constant="270" id="m3R-6h-6gz"/>
+                            <constraint firstItem="MYz-RS-vbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ne6-jF-Rt8"/>
+                            <constraint firstItem="4N7-8P-seT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="qc5-SX-rPr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dice1" destination="MYz-RS-vbJ" id="D21-Iv-rXx"/>
+                        <outlet property="dice2" destination="Xym-jx-E0a" id="gZR-xi-yY7"/>
+                        <outlet property="score" destination="JWY-Tv-YeU" id="D5j-yN-CKy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="32.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="150" height="150"/>
+        <image name="dice2" width="150" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
